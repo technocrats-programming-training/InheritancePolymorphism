@@ -1,5 +1,7 @@
 package inheritancepolymorphism;
 
+import java.util.ArrayList;
+
 public class VCS {
 
     private ArrayList<Commit> commitHistory;
@@ -11,7 +13,7 @@ public class VCS {
     }
 
     public int commit(Commit commit) {
-        history.add(commit);
+        commitHistory.add(commit);
         HEAD += 1;
         return HEAD;
     }
@@ -24,7 +26,7 @@ public class VCS {
     }
 
     public void checkout(int newHEAD) {
-        HEAD = newHead;
+        HEAD = newHEAD;
     }
 
 }
